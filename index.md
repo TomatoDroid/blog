@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Zhen Blog"
-  text: "随便写写"
+  text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
