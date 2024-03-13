@@ -1,17 +1,27 @@
 {
   "name": "zhenblog",
+  "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:TomatoDroid/blog.git",
+  "private": true,
   "author": "zhen <770226915@qq.com>",
-  "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "serve": "vitepress serve docs",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "lint": "eslint .",
+    "format": "eslint . --fix"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.1",
+    "@iconify-json/logos": "^1.1.42",
+    "@iconify/json": "^2.2.191",
+    "@unocss/eslint-plugin": "^0.58.5",
+    "@unocss/reset": "^0.58.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
+    "feed": "^4.2.2",
+    "unocss": "^0.58.5",
     "vitepress": "1.0.0-rc.45",
     "vue": "^3.2.45"
   }
