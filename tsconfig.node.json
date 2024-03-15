@@ -6,5 +6,5 @@
     // "allowJs": true,
     "strict": true
   },
-  "include": ["./.vitepress/**/*"]
+  "include": [".vitepress/config.ts"]
 }

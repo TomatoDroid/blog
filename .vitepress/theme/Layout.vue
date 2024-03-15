@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
+import NotFound from './NotFound.vue'
+import Home from './Home.vue'
+import Article from './Article.vue'
 
-const { theme } = useData()
+const { frontmatter, page } = useData()
 </script>
 
 <template>
@@ -23,5 +26,10 @@ const { theme } = useData()
         </div>
       </nav>
     </header>
+    <main mx-auto max-w-3xl px-4 xl:max-w-5xl sm:px-6 xl:px-0>
+      <Home v-if="frontmatter.index" />
+      <NotFound v-else-if="page.isNotFound" />
+      <Article v-else />
+    </main>
   </div>
 </template>
