@@ -1,13 +1,11 @@
 {
   "name": "zhenblog",
-  "type": "module",
   "version": "1.0.0",
   "private": true,
   "author": "zhen <770226915@qq.com>",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "serve": "vitepress serve docs",
     "preview": "vitepress preview",
     "lint": "eslint .",
     "format": "eslint . --fix"

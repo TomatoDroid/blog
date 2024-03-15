@@ -1,8 +1,12 @@
-import './style.css'
+// https://vitepress.dev/guide/custom-theme
 import Layout from './Layout.vue'
-import 'virtual:uno.css'
-import '@unocss/reset/tailwind.css'
+import type { Theme } from 'vitepress'
+import './style.css'
 
 export default {
-  Layout
-}
+  Layout,
+  enhanceApp({ app, router, siteData }) {
+    // ...
+  }
+} satisfies Theme
+
