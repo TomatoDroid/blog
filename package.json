@@ -1,5 +1,6 @@
 {
   "name": "zhenblog",
+  "type": "module",
   "version": "1.0.0",
   "private": true,
   "author": "zhen <770226915@qq.com>",
@@ -19,7 +20,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.0",
     "feed": "^4.2.2",
-    "unocss": "^0.58.5",
+    "unocss": "^0.58.6",
     "vitepress": "1.0.0-rc.45",
     "vue": "^3.2.45"
   }
