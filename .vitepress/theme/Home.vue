@@ -7,7 +7,7 @@ const { frontmatter } = useData()
 </script>
 
 <template>
-  <div my-2 pb-8 pt-6 md:my-5>
+  <div pb-8 pt-6>
     <h1 text-3xl text-gray-900 font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl dark:text-white md:leading-14 sm:leading-10>
       {{ frontmatter.title }}
     </h1>
@@ -39,4 +39,4 @@ const { frontmatter } = useData()
       </article>
     </li>
   </ul>
-</template>./posts.data
+</template>
