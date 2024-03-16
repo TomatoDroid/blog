@@ -9,5 +9,6 @@ export default defineConfig({
   ],
   shortcuts: {
     'link': 'text-color-[#3eaf7c] hover:text-color-[#4abf8a]',
+    'prose-base': 'prose dark:prose-white'
   }
 })
