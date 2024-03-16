@@ -28,7 +28,7 @@ const { frontmatter } = useData()
             </h2>
             <div
               v-if="excerpt"
-              prose-base max-w-none text-gray-500 dark:text-gray-300
+              max-w-none text-gray-500 dark:text-gray-300 prose-base
               v-html="excerpt"
             />
             <div text-balance font-medium leading-6>
