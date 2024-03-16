@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { Post } from './post.data';
+import { Data } from './posts.data';
 
-const props = defineProps<{ date: Post['date'] }>()
+const props = defineProps<{ date: Data['date'] }>()
 
 function getDateTime() {
     return new Date(props.date.time).toISOString()
@@ -15,3 +15,4 @@ function getDateTime() {
     </dd>
   </dl>
 </template>
+./posts.data

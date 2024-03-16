@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { data as posts } from './post.data'
+import { data as posts } from './posts.data'
 import Date from './Date.vue'
 
 const { frontmatter } = useData()
@@ -39,4 +39,4 @@ const { frontmatter } = useData()
       </article>
     </li>
   </ul>
-</template>
+</template>./posts.data

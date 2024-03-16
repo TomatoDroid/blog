@@ -1,6 +1,6 @@
 import { createContentLoader } from "vitepress";
 
-export interface Post {
+export interface Data {
     title: string,
     url:string,
     date: {
@@ -10,12 +10,12 @@ export interface Post {
     excerpt: string | undefined
 }
 
-declare const data: Post[] 
+declare const data: Data[]
 export { data }
 
 export default createContentLoader('posts/*.md', {
     excerpt: true,
-    transform(raw): Post[] {
+    transform(raw): Data[] {
         return raw.map(({url,frontmatter,excerpt}) => ({
             title: frontmatter.title,
             url,
@@ -25,7 +25,7 @@ export default createContentLoader('posts/*.md', {
     }
 })
 
-function formateDate(raw: string):Post['date'] {
+function formateDate(raw: string): Data['date'] {
     const date = new Date(raw)
     date.setUTCHours(12)
     return {
