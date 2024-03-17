@@ -2,4 +2,20 @@
 html {
   font-family: Arial, Helvetica;
 }
+.language-js {
+  background-color: #080b12;
+  border-radius: 10px;
+}
 
+button.copy {
+  display: none;
+}
+
+span.lang {
+  position: absolute;
+  right: 0.5em;
+  font-size: 0.75em;
+  color: #999;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}

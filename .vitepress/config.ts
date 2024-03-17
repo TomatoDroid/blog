@@ -20,6 +20,9 @@ export default defineConfig({
   description: "臻听，臻写，臻感受",
   cleanUrls: true,
   head: [],
+  markdown: {
+    theme: 'github-dark'
+  },
   // buildEnd: genPosts,
   vite:{
     plugins: [
