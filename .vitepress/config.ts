@@ -16,10 +16,20 @@ async function genPosts() {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Zhen blog",
+  title: "刘臻的Blog",
   description: "臻听，臻写，臻感受",
   cleanUrls: true,
-  head: [],
+  head: [
+    [ 'meta', { name: 'author', content: 'liuzhen' } ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: '/favicon.svg'
+      }
+    ]
+  ],
   markdown: {
     theme: 'github-dark'
   },

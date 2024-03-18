@@ -1,0 +1,32 @@
+<svg width="92" height="49" viewBox="0 0 92 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    /* 167 150  27*/
+    path{
+        stroke-dasharray: 167;
+        animation: a 5s ease forwards infinite;
+    }
+    @keyframes a {
+        from {
+            stroke-dashoffset: 167;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    .path1 {
+        animation-delay: 0s
+    }
+
+    .path2 {
+        animation-delay: 1s
+    }
+
+    .path3 {
+        animation-delay: 2s
+    }
+</style>
+<rect width="92" height="49" fill="white"/>
+<path class="path1" d="M12.5 22.5C11.8333 24.5 11 28.7 13 29.5C15.5 30.5 21 31 37.5 20C50.7 11.2 49.6667 4.66667 47.5 2.5C45.3333 1 38.4 0.900001 28 12.5L14.5 28L1.5 47.5L2.5 44L3 43.5C8.5 41.1667 20.6 36.5 27 36.5C35 36.5 38.5 38.5 36.5 42.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="path2" d="M56 13C56 11 57.4 6.7 63 5.5C68.6 4.3 82.6667 5 89 5.5C72.5 16.6667 39.7 40 40.5 44C42 41.6667 46.9 37.2 54.5 38C64 39 74.5 45 79.5 41.5C83.5 38.7 82.1667 35 81 33.5" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path class="path3" d="M54 23L80.5 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>

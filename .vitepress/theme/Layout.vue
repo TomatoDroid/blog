@@ -3,6 +3,7 @@ import { useData } from 'vitepress'
 import NotFound from './NotFound.vue'
 import Home from './Home.vue'
 import Article from './Article.vue'
+import Logo from './Logo.vue'
 
 const { frontmatter, page } = useData()
 </script>
@@ -12,8 +13,7 @@ const { frontmatter, page } = useData()
     <header mx-auto max-w-3xl px-4 xl:max-w-5xl sm:px-6 xl:px-0>
       <nav flex="~ justify-between items-center" py-10 font-bold>
         <a href="/" aria-label="zhen blog" flex="~ items-center gap-col-2" text-xl>
-          <div i-logos:vue inline-block h-31px w-36px />
-          <span v-if="!frontmatter.index" class="hidden md:inline-block dark:text-white">The Vue Point</span>
+          <Logo />
         </a>
         <div text-sm text-gray-500 leading-5 dark:text-white flex="~ items-center">
           <a href="/" title="blog" hover:text-gray-700 dark:hover:text-gray-200>Blog</a>
