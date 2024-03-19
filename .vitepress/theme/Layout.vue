@@ -16,7 +16,7 @@ const { frontmatter, page } = useData()
         <a href="/" aria-label="zhen blog" flex="~ items-center gap-col-2" text-xl>
           <Logo h-12 w-12 />
         </a>
-        <div text-base text-sm text-gray-500 leading-5 flex="~ items-center">
+        <div text-sm text-gray-500 leading-5 text-base flex="~ items-center">
           <a href="/" title="blog" hover:text-gray-700 dark:hover:text-gray-200>Blog</a>
           <span mx-2>·</span>
           <a href="https://github.com/TomatoDroid" target="_blank" title="github" i-ph:github-logo inline-block h-30px w-30px dark:hover:text-gray-200 />

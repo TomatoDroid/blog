@@ -1,18 +1,18 @@
 import { defineConfig, createContentLoader } from 'vitepress'
 import Unocss from 'unocss/vite'
 
-async function genPosts() {
-  const posts = await createContentLoader('posts/*.md', {
-    excerpt: true,
-    render: true
-  }).load()
+// async function genPosts() {
+//   const posts = await createContentLoader('posts/*.md', {
+//     excerpt: true,
+//     render: true
+//   }).load()
 
-  posts.sort(
-    (a, b) =>
-      +new Date(b.frontmatter.date as string) -
-      +new Date(a.frontmatter.date as string)
-  )
-}
+//   posts.sort(
+//     (a, b) =>
+//       +new Date(b.frontmatter.date as string) -
+//       +new Date(a.frontmatter.date as string)
+//   )
+// }
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -38,8 +38,5 @@ export default defineConfig({
     plugins: [
       Unocss()
     ],
-    build: {
-      sourcemap: true
-    }
   }
 })

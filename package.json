@@ -22,6 +22,11 @@
     "feed": "^4.2.2",
     "unocss": "^0.58.6",
     "vitepress": "1.0.0-rc.45",
-    "vue": "^3.2.45"
+    "vue": "^3.4.21"
+  },
+  "pnpm": {
+    "overrides": {
+      "@vitejs/plugin-vue": "5.0.0-beta.1"
+    }
   }
 }

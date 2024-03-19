@@ -10,7 +10,7 @@ export interface Data {
     excerpt: string | undefined
 }
 
-declare const data: Data[]
+declare const data: Data[];
 export { data }
 
 export default createContentLoader('posts/*.md', {
