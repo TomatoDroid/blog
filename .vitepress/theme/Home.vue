@@ -8,10 +8,10 @@ const { frontmatter } = useData()
 
 <template>
   <div pb-8 pt-6>
-    <h1 text-3xl text-base text-gray-900 font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl md:leading-14 sm:leading-10>
+    <h1 text-3xl text-gray-900 font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl text-base md:leading-14 sm:leading-10>
       {{ frontmatter.title }}
     </h1>
-    <p mt-5 text-base text-lg text-gray-500 leading-7>
+    <p mt-5 text-lg text-gray-500 leading-7 text-base>
       {{ frontmatter.subtext }}
     </p>
   </div>
