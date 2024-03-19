@@ -22,7 +22,7 @@ const { frontmatter } = useData()
             h-10 w-10 rounded-full
           >
           <dl whitespace-nowrap text-sm font-medium leading-5>
-            <dd text-gray-900 dark:text-white>
+            <dd text-base>
               {{ frontmatter.author }}
             </dd>
             <dd v-if="frontmatter.twitter">

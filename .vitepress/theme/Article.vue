@@ -23,7 +23,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
     <header pb-1 pt-6 text-center xl:pb-10>
       <Date :date="date" />
       <h1
-        text-3xl text-gray-900 font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl dark:text-white md:leading-14 sm:leading-10
+        text-3xl text-base font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl md:leading-14 sm:leading-10
       >
         {{ data.title }}
       </h1>
@@ -35,7 +35,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
       </div>
       <footer text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2>
         <div v-if="nextPost" b-b b-gray-200 py-8 dark:b-slate-200:5>
-          <h2 text-xs text-gray-500 tracking-wide uppercase dark:text-white>
+          <h2 text-base text-xs text-gray-500 tracking-wide uppercase>
             Next Article
           </h2>
           <div link>
@@ -43,7 +43,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
           </div>
         </div>
         <div v-if="prevPost" b-b b-gray-200 py-8 dark:b-slate-200:5>
-          <h2 text-xs text-gray-500 tracking-wide uppercase dark:text-white>
+          <h2 text-base text-xs text-gray-500 tracking-wide uppercase>
             Previous Article
           </h2>
           <div link>

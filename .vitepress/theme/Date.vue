@@ -15,4 +15,3 @@ function getDateTime() {
     </dd>
   </dl>
 </template>
-./posts.data

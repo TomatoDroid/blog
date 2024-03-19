@@ -16,8 +16,8 @@ async function genPosts() {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "刘臻的Blog",
-  description: "臻听，臻写，臻感受",
+  title: "lz's blog",
+  description: "随便记一记",
   cleanUrls: true,
   head: [
     [ 'meta', { name: 'author', content: 'liuzhen' } ],
@@ -26,7 +26,7 @@ export default defineConfig({
       {
         rel: 'icon',
         type: 'image/svg+xml',
-        href: '/favicon.svg'
+        href: '/favicon1.svg'
       }
     ]
   ],
@@ -37,6 +37,9 @@ export default defineConfig({
   vite:{
     plugins: [
       Unocss()
-    ]
+    ],
+    build: {
+      sourcemap: true
+    }
   }
 })

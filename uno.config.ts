@@ -1,4 +1,4 @@
-import { defineConfig, presetUno, presetTypography, presetAttributify,presetIcons } from 'unocss'
+import { defineConfig, presetUno, presetTypography, presetAttributify,presetIcons, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -16,6 +16,10 @@ export default defineConfig({
   ],
   shortcuts: {
     'link': 'text-color-[#3eaf7c] hover:text-color-[#4abf8a]',
-    'prose-base': 'prose dark:prose-white'
-  }
+    'prose-base': 'prose dark:prose-white',
+    'text-base': 'text-gray-900 dark:text-white'
+  },
+  transformers: [
+    transformerDirectives()
+  ]
 })

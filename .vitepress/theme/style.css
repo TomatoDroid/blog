@@ -1,8 +1,17 @@
+:root {
+  //定义css全局变量
+}
 
 html {
   font-family: Arial, Helvetica;
+  --uno: bg-slate-900;
 }
-.language-js {
+
+::selection {
+  background: #8884;
+}
+
+[class^="language-"] {
   background-color: #080b12;
   border-radius: 10px;
 }
