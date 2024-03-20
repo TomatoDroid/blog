@@ -21,12 +21,12 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
 <template>
   <article xl:b-t dark:b-slate-200:5 xl:b-gray-200>
     <header pb-1 pt-6 text-center xl:pb-10>
-      <Date :date="date" />
       <h1
         head-base text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl md:leading-14 sm:leading-10
       >
         {{ data.title }}
       </h1>
+      <Date :date="date" />
     </header>
     <div xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10" b-t b-gray-200 pb-16 dark:b-slate-200:5 xl:pb-20>
       <Author />

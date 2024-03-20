@@ -1,6 +1,7 @@
 :root {
   /* 定义css全局变量 */
   --c-bg: #1a1a1a;
+  --lang-bg: #080b12;
 }
 
 html {
@@ -17,7 +18,7 @@ html.dark {
 }
 
 [class^="language-"] {
-  background-color: #080b12;
+  background-color: var(--lang-bg);
   border-radius: 10px;
 }
 

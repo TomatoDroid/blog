@@ -32,7 +32,7 @@ import Logo from '../.vitepress/theme/components/Logo.vue'
 
    ![step2](/svglogo/step3.png)
 
-   ::: tip
+   ::: warning
    为了达到一笔写出的效果，钢笔的绘制也就需要连贯，去掉蒙层后实际的绘制路径是下面这样。不然导出的svg中path会有多个，你就需要判断多个path开始动画的时机了，会比较麻烦。
    :::
 
@@ -76,7 +76,7 @@ import Logo from '../.vitepress/theme/components/Logo.vue'
 }
 ```
 
-:::tip
+:::warning
 上面代码上的430px是svg路径的长度，你可以通过`path.getTotalLength()`来获得
 :::
 
