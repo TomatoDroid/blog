@@ -15,10 +15,10 @@ export default defineConfig({
     })
   ],
   shortcuts: {
-    'link': 'text-color-#66ccff hover:text-color-#ff9933 dark:text-color-#dc3545 hover:dark:text-color-#6c757d ',
+    'link': ' text-color-#3451b2 hover:text-color-#6c757d dark:text-color-#66ccff dark:hover:text-color-#ff9933',
     'prose-base': 'prose dark:prose-white',
-    'text-base': 'text-#333333  dark:text-#e6e6e6',
-    'head-base': 'text-#0077b6 dark:text-#ffcc66'
+    'text-base': 'text-#1c1e21  dark:text-#e6e6e6',
+    'head-base': 'text-#1c1e21 dark:text-#ffcc66'
   },
   transformers: [
     transformerDirectives()

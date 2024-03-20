@@ -5,11 +5,11 @@
 
 html {
   font-family: Arial, Helvetica;
-  --nuo: bg-#f5f5f5;
+  background: #f5f5f5;
 }
 
 html.dark {
-  --uno: bg-[--c-bg];
+  background: var(--c-bg);
 }
 
 ::selection {
