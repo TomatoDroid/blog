@@ -14,4 +14,4 @@ function getDateTime() {
       <time :datetime="getDateTime()">{{ date.string }}</time>
     </dd>
   </dl>
-</template>
+</template>../posts.data

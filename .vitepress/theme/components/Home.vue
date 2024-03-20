@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import { data as posts } from './posts.data'
+import { data as posts } from '../posts.data'
 import Date from './Date.vue'
 
 const { frontmatter } = useData()
@@ -8,10 +8,10 @@ const { frontmatter } = useData()
 
 <template>
   <div pb-8 pt-6>
-    <h1 text-3xl text-gray-900 font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl text-base md:leading-14 sm:leading-10>
+    <h1 text-3xl font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl text-base md:leading-14 sm:leading-10>
       {{ frontmatter.title }}
     </h1>
-    <p mt-5 text-lg text-gray-500 leading-7 text-base>
+    <p mt-5 text-lg leading-7 text-base>
       {{ frontmatter.subtext }}
     </p>
   </div>
@@ -22,13 +22,13 @@ const { frontmatter } = useData()
         <div my-5 xl:grid-cols-3>
           <div my-6>
             <h2 text-2xl font-bold leading-8 tracking-tight>
-              <a text-base :href="url">
+              <a head-base :href="url">
                 {{ title }}
               </a>
             </h2>
             <div
               v-if="excerpt"
-              max-w-none text-gray-500 dark:text-gray-300 prose-base
+              max-w-none text-base prose-base
               v-html="excerpt"
             />
             <div text-balance font-medium leading-6>
@@ -39,4 +39,4 @@ const { frontmatter } = useData()
       </article>
     </li>
   </ul>
-</template>
+</template>../posts.data

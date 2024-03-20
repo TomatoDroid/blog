@@ -1,5 +1,6 @@
 import { defineConfig, createContentLoader } from 'vitepress'
 import Unocss from 'unocss/vite'
+import VitePluginVueDevtools from 'vite-plugin-vue-devtools'
 
 // async function genPosts() {
 //   const posts = await createContentLoader('posts/*.md', {
@@ -33,10 +34,12 @@ export default defineConfig({
   markdown: {
     theme: 'github-dark'
   },
+  appearance: 'dark',
   // buildEnd: genPosts,
   vite:{
     plugins: [
-      Unocss()
+      Unocss(),
+      VitePluginVueDevtools()
     ],
   }
 })

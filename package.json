@@ -11,6 +11,9 @@
     "lint": "eslint .",
     "format": "eslint . --fix"
   },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.1",
     "@iconify-json/logos": "^1.1.42",
@@ -21,6 +24,7 @@
     "eslint-plugin-format": "^0.1.0",
     "feed": "^4.2.2",
     "unocss": "^0.58.6",
+    "vite-plugin-vue-devtools": "^7.0.19",
     "vitepress": "1.0.0-rc.45",
     "vue": "^3.4.21"
   },

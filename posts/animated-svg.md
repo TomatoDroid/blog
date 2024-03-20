@@ -11,7 +11,7 @@ twitter: '@770226915Liu'
 SVG，可缩放矢量图形，放大也不会出现模糊，这就是我对svg的理解了，可能图标也就是我最常用到它的地方了，但直到我看到[antfu的博客](https://antfu.me/posts/animated-svg-logo)的logo时，太酷了！就跟手写的一样。于是跟着他的博客，我也尝试做了一个。
 
 <script setup>
-import Logo from '../.vitepress/theme/Logo.vue'
+import Logo from '../.vitepress/theme/components/Logo.vue'
 </script>
 
 <div flex="~ justify-center">

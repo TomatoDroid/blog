@@ -15,9 +15,10 @@ export default defineConfig({
     })
   ],
   shortcuts: {
-    'link': 'text-color-[#3eaf7c] hover:text-color-[#4abf8a]',
+    'link': 'text-color-#66ccff hover:text-color-#ff9933 dark:text-color-#dc3545 hover:dark:text-color-#6c757d ',
     'prose-base': 'prose dark:prose-white',
-    'text-base': 'text-gray-900 dark:text-white'
+    'text-base': 'text-#333333  dark:text-#e6e6e6',
+    'head-base': 'text-#0077b6 dark:text-#ffcc66'
   },
   transformers: [
     transformerDirectives()
