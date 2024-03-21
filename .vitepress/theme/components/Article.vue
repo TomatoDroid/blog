@@ -31,7 +31,8 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
     <div xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10" b-t b-gray-200 pb-16 dark:b-slate-200:5 xl:pb-20>
       <Author />
       <div b-t b-gray-200 xl:col-span-3 xl:row-span-3 dark:b-slate-200:5 xl:pb-0>
-        <Content max-w-none pb-8 pt-10 prose-base />
+        <!-- vp-dic is theme default class, don't delete!  -->
+        <Content class="vp-doc" max-w-none pb-8 pt-10 prose-base />
       </div>
       <footer text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2>
         <div v-if="nextPost" b-b b-gray-200 py-8 dark:b-slate-200:5>

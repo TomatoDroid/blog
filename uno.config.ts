@@ -5,14 +5,7 @@ export default defineConfig({
     presetAttributify(),
     presetUno(),
     presetIcons(),
-    presetTypography({
-      cssExtend: {
-        'code': {
-          'color': '#d1e9ff',
-          'background-color': '#3c3a5b',
-        },
-      }
-    })
+    presetTypography()
   ],
   shortcuts: {
     'link': ' text-color-#3451b2 hover:text-color-#6c757d dark:text-color-#66ccff dark:hover:text-color-#ff9933',
