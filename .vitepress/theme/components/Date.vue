@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Data } from './posts.data';
+import { Data } from '../posts.data';
 
 const props = defineProps<{ date: Data['date'] }>()
 
@@ -14,4 +14,4 @@ function getDateTime() {
       <time :datetime="getDateTime()">{{ date.string }}</time>
     </dd>
   </dl>
-</template>../posts.data
+</template>

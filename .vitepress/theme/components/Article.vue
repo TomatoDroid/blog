@@ -22,11 +22,11 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
   <article xl:b-t dark:b-slate-200:5 xl:b-gray-200>
     <header pb-1 pt-6 text-center xl:pb-10>
       <h1
-        head-base text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl md:leading-14 sm:leading-10
+        text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl head-base md:leading-14 sm:leading-10
       >
         {{ data.title }}
       </h1>
-      <!-- <Date :date="date" /> -->
+      <Date :date="date" />
     </header>
     <div xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10" b-t b-gray-200 pb-16 dark:b-slate-200:5 xl:pb-20>
       <Author />
@@ -36,7 +36,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
       </div>
       <footer text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2>
         <div v-if="nextPost" b-b b-gray-200 py-8 dark:b-slate-200:5>
-          <h2 head-base text-xs tracking-wide uppercase>
+          <h2 text-xs tracking-wide uppercase head-base>
             Next Article
           </h2>
           <div link>
@@ -44,7 +44,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
           </div>
         </div>
         <div v-if="prevPost" b-b b-gray-200 py-8 dark:b-slate-200:5>
-          <h2 head-base text-xs tracking-wide uppercase>
+          <h2 text-xs tracking-wide uppercase head-base>
             Previous Article
           </h2>
           <div link>
@@ -57,4 +57,4 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
       </footer>
     </div>
   </article>
-</template>../posts.data
+</template>

@@ -36,7 +36,7 @@ const toggleDark = useToggle(isDark)
       <Home v-if="frontmatter.index" />
       <NotFound v-else-if="page.isNotFound" />
       <Article v-else />
-      <Footer />
     </main>
+    <Footer />
   </div>
-</template>../composables/dark
+</template>
