@@ -26,7 +26,7 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
       >
         {{ data.title }}
       </h1>
-      <Date :date="date" />
+      <!-- <Date :date="date" /> -->
     </header>
     <div xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10" b-t b-gray-200 pb-16 dark:b-slate-200:5 xl:pb-20>
       <Author />
