@@ -30,7 +30,7 @@ function formateDate(raw: string): Data['date'] {
     date.setUTCHours(12)
     return {
         time: +date,
-        string: date.toLocaleDateString('en-US', {
+        string: date.toLocaleDateString(undefined, {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
