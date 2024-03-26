@@ -39,4 +39,4 @@ const { frontmatter } = useData()
       </article>
     </li>
   </ul>
-</template>../posts.data
+</template>
