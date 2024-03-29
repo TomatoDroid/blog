@@ -19,16 +19,28 @@ const prevPost = computed(() => posts[fundCurrentIndex() + 1])
 </script>
 
 <template>
-  <article xl:b-t dark:b-slate-200:5 xl:b-gray-200>
-    <header pb-1 pt-6 text-center xl:pb-10>
+  <article
+    b-t="xl:~ xl:gray-200 dark:slate-200/5"
+  >
+    <header
+      p-t-6
+      p-b="~ xl:10"
+      text-center
+    >
       <h1
-        text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl head-base md:leading-14 sm:leading-10
+        text="3xl md:5xl sm:4xl"
+        leading="9 md:14 dm:10"
+        font-extrabold tracking-tight head-base
       >
         {{ data.title }}
       </h1>
       <Date :date="date" />
     </header>
-    <div xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10" b-t b-gray-200 pb-16 dark:b-slate-200:5 xl:pb-20>
+    <div
+      xl:grid="~ cols-4 rows-[auto_1fr] gap-x-10"
+      b="t b-gray-200 dark:b-slate-200/5"
+      p-b="16 xl:20"
+    >
       <Author />
       <div b-t b-gray-200 xl:col-span-3 xl:row-span-3 dark:b-slate-200:5 xl:pb-0>
         <!-- vp-dic is theme default class, don't delete!  -->
