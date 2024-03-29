@@ -55,10 +55,10 @@ async function handleToggleDark() {
           <Logo h-12 w-12 />
         </a>
         <div text-sm text-gray-500 leading-5 text-base flex="~ items-center">
-          <!-- <a href="/" title="blog" hover:text-gray-700 dark:hover:text-gray-200>home</a>
-          <span mx-2>·</span> -->
-          <a href="/" title="blog" hover:text-gray-700 dark:hover:text-gray-200>Blog</a>
+          <a href="/" title="home" hover:text-gray-700 dark:hover:text-gray-200>Home</a>
           <span mx-2>·</span>
+          <!-- <a href="/blog" title="blog" hover:text-gray-700 dark:hover:text-gray-200>Blog</a>
+          <span mx-2>·</span> -->
           <a href="https://github.com/TomatoDroid" target="_blank" title="github" i-ph:github-logo inline-block h-30px w-30px dark:hover:text-gray-200 />
           <span mx-2>·</span>
           <span flex="~ items-center" w-30px cursor-pointer @click="handleToggleDark">

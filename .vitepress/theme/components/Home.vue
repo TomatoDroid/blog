@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
 import { data as posts } from '../posts.data'
 import Date from './Date.vue'
-
-const { frontmatter } = useData()
 </script>
 
 <template>
   <div pb-8 pt-6>
-    <h1 text-3xl font-extrabold leading-9 tracking-tight md:text-6xl sm:text-4xl text-base md:leading-14 sm:leading-10>
-      {{ frontmatter.title }}
-    </h1>
-    <p mt-5 text-lg leading-7 text-base>
-      {{ frontmatter.subtext }}
-    </p>
+    <div>
+      <h1 text-center text-3xl font-extrabold leading-9>
+        hey, I'm liuzhen
+      </h1>
+      <p class="text-gray-500/60" text-center text-2xl font-bold leading-loose>
+        a FrontEnd Developer
+      </p>
+    </div>
   </div>
   <ul>
     <li v-for="{ title, url, date, excerpt } in posts" :key="url" py-12 b-t="~ #629be70d">
@@ -28,7 +27,7 @@ const { frontmatter } = useData()
             </h2>
             <div
               v-if="excerpt"
-              max-w-none text-base prose-base
+              prose-base max-w-none text-base
               v-html="excerpt"
             />
             <div text-balance font-medium leading-6>
