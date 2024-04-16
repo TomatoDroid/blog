@@ -13,13 +13,15 @@ const { frontmatter } = useData()
             v-if="frontmatter.gravatar"
             :src="`https://gravatar.com/avatar/${frontmatter.gravatar}`"
             alt="author image"
-            h-10 w-10 rounded-full
+            size-10 rounded-full
+            border="1px solid white"
           >
           <img
             v-else-if="frontmatter.avatar"
             :src="frontmatter.avatar"
             alt="author image"
-            h-10 w-10 rounded-full
+            size-10 rounded-full
+            border="1px solid white"
           >
           <dl whitespace-nowrap text-sm font-medium leading-5>
             <dd text-base>

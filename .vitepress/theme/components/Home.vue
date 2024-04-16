@@ -6,16 +6,16 @@ import Date from './Date.vue'
 <template>
   <div pb-8 pt-6>
     <div>
-      <h1 text-center text-3xl font-extrabold leading-9>
-        hey, I'm liuzhen
+      <h1 mb-10 text-3xl text-white font-extrabold>
+        Hey, I'm liuzhen!
       </h1>
-      <p class="text-gray-500/60" text-center text-2xl font-bold leading-loose>
-        a FrontEnd Developer
+      <p text-2xl>
+        Welcome to my blog! I'm a passionate open source enthusiast and front-end developer.
       </p>
     </div>
   </div>
   <ul>
-    <li v-for="{ title, url, date, excerpt } in posts" :key="url" py-12 b-t="~ #629be70d">
+    <li v-for="{ title, url, date, excerpt } in posts" :key="url" py-12>
       <article my-2 xl:grid="~ cols-[1fr_3fr] items-baseline" xl:my-0>
         <Date :date="date" />
         <div my-5 xl:grid-cols-3>
