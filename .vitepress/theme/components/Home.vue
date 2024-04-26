@@ -6,7 +6,7 @@ import Date from './Date.vue'
 <template>
   <div pb-8 pt-6>
     <div>
-      <h1 mb-10 text-3xl text-white font-extrabold>
+      <h1 mb-10 text-3xl font-extrabold>
         Hey, I'm liuzhen!
       </h1>
       <p text-2xl>
